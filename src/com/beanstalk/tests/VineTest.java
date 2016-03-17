@@ -42,7 +42,7 @@ public class VineTest extends ConcurrentTestCase{
 
     @Test
     public void testInitializeSuccess() throws Exception {
-        Vine.initialize("allan.pichardo@gmail.com", "NimoIsN01", new Vine.InitializedListener() {
+        Vine.initialize("username@domain.com", "password", new Vine.InitializedListener() {
             @Override
             public void onInitialized(Vine vine) {
                 threadAssertNotNull(vine);
@@ -84,7 +84,7 @@ public class VineTest extends ConcurrentTestCase{
 
     @Test
     public void testSearchForTag() throws TimeoutException {
-        Vine.initialize("allan.pichardo@gmail.com", "NimoIsN01", new Vine.InitializedListener() {
+        Vine.initialize("username@domain.com", "password", new Vine.InitializedListener() {
             @Override
             public void onInitialized(Vine vine) {
                 threadAssertNotNull(vine);
